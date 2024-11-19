@@ -17,8 +17,17 @@
               }
           }
       </style>
-    <script type="module" crossorigin src="/assets/index-CT-aTIPM.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-QsMlOUMP.css">
+      <script>
+          (function(){
+              const redirect = sessionStorage.redirect;
+              delete sessionStorage.redirect;
+              if (redirect && redirect !== location.href) {
+                  history.replaceState(null, null, redirect);
+              }
+          })();
+      </script>
+    <script type="module" crossorigin src="/assets/index-D6Sl7vCq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CQHSzAB6.css">
   </head>
   <body>
     <div id="app"></div>
